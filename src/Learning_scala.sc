@@ -81,7 +81,6 @@ println("product of the Array elements :"+myArray.product)
 val names: Array[String]=Array("Tom","Gauri","shrasti")
 names.foreach(println)
 
-
 var mylist: List[Int]=List(1,2,3,4,5);
 println(mylist)
 println(mylist.head)
@@ -92,4 +91,23 @@ mylist.foreach(println)
 
 println("Hello")
 
+object switchCase{
+  def main(args:Array[String]): Unit = {
+    val personAge=20
+
+    age match {
+      case 20 => println(age)
+      case 30 => println(age)
+      case 40 => println(age)
+      case 50 => println(age)
+      case _  => println("default")
+    }
+  }
+}
+
+class SayHello extends Function1[String, Unit] {
+  override def apply(s: String): Unit = println(s"Hello $s")
+}
+
+val sayHello: String => Unit = (s) => { println(s"Hello $s")}
 
