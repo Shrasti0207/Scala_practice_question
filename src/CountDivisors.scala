@@ -13,6 +13,4 @@ object CountDivisors {
     }
       println(count)
   }
-
-
 }
